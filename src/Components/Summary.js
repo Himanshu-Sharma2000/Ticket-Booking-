@@ -52,7 +52,7 @@ const Summary = () => {
     setShowBookingForm(true);
   };
 
-
+;
   return (
     <div>
       <div className="clearfix text-light" style={{ padding: "60px 80px" ,background:"url(https://media.istockphoto.com/id/1204686514/vector/modern-cinema-background-realistic-film-strips-in-perspective-wave-form-3d-movie-template.jpg?s=170667a&w=0&k=20&c=H8201ZWqArZDHsGSb-XJ_sqX8yxnabK0J7HeVDUk0sI=) no-repeat center center/cover"}}>
@@ -61,7 +61,7 @@ const Summary = () => {
         <div className="container mx-4 text-center">
         <h1 className=' mt-4'><span className="fs-3" ref={el}></span> </h1>
         <h4 className=''>Show Name : {show.name?show.name:""} </h4>
-        <p  style={{margin:"0px 30px"}}>{show.summary }</p>
+        <p  style={{margin:"0px 30px"}}>{show.summary}</p>
         <button onClick={handleBookingClick} className="btn  btn-success my-4  me-5 " type="button">Book Ticket</button>
        {showBookingForm && <BookTicket showName={show.name} />}
        <br />
